@@ -1,0 +1,13 @@
+.report {
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+}
+
+.charts_wrapper {
+  padding: 20px;
+}

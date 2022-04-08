@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BarChart from "./components/BarChart";
+import HorMulBarChart from "./components/HorMulBarChart";
+
+import styles from "./App.module.css";
+import HorBarWrapper from "./components/HorBar/HorBarWrapper";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.report}>
+      <p className={styles.title}>Отчет за 25.02.22 и 24.02.22</p>
+      <div className={styles.charts_wrapper}>
+        <HorMulBarChart />
+        <BarChart />
+        <p>Время работы ККД в пересменки c, мин</p>
+        <HorBarWrapper />
+      </div>
     </div>
   );
 }
