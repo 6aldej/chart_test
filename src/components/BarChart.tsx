@@ -12,7 +12,7 @@ const BarChart = () => {
       enabled: false,
     },
     title: {
-      text: "График интервалов между креслами за 25.02.22 и 24.02.22",
+      text: "График интервалов между креслами",
       margin: 0,
       style: {
         fontSize: "16px",
