@@ -3,6 +3,11 @@ import xrange from "highcharts/modules/xrange";
 import HighchartsReact from "highcharts-react-official";
 
 import hMulBarChart from "./data/hMulBarChart";
+import languageOptions from "../configs/chartsLanguageOptions";
+
+Highcharts.setOptions({
+  ...languageOptions,
+});
 
 xrange(Highcharts);
 
@@ -76,7 +81,7 @@ const HorMulBarChart = () => {
       },
     },
     tooltip: {
-      enabled: false,
+      enabled: true,
     },
     series: hMulBarChart.series,
   };
